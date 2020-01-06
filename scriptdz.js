@@ -18,8 +18,8 @@ for(let i = 0; i < 2; i++) {
         console.log('done');
         appData.expenses[a] = b;
     } else {
+        console.log('bad result');
         i--;
-        continue;
     }
 }
 
@@ -32,7 +32,8 @@ while(i < 2) {
         console.log('done');
         appData.expenses[a] = b;
     } else {
-        continue;
+        console.log('bad result');
+        i--;
     }
 
     i++;
@@ -47,7 +48,8 @@ do{
         console.log('done');
         appData.expenses[a] = b;
     } else {
-        continue;
+        console.log('bad result');
+        i--;
     }
 
     i++;
@@ -55,7 +57,7 @@ do{
 
 appData.moneyPerDay = appData.budget / 30; //Запишем в объект значение дневного бюджета
 
-alert('Ужедневный бюджет: ' + appData.moneyPerDay);
+alert('Ужедневный бюджет: ' + appData.moneyPerDay + ' грн.');
 
 // В зависимости от ежедневного бюджета выведем уровень достатка человека
 
